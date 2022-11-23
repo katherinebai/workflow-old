@@ -1,0 +1,55 @@
+{
+  "Name": "添加或更新出差信息表",
+  "ID": "46d79579-388b-439a-8d09-b7a99f94477b",
+  "Params": [
+    {
+      "ID": "a1315702-72f8-4d51-84b2-f693abe6d889",
+      "Name": "出差ID"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+              "cellLocations": [
+                {
+                  "SerializeProperty": "=出差ID"
+                }
+              ]
+            },
+            "value": "%Null%",
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "出差信息表",
+              "ShowConfirm": false,
+              "ConfirmText": "您确定要更新这行记录吗？",
+              "UpdateBindingValues": []
+            }
+          ],
+          "ID": "29c58227-d96f-435e-a928-e7ddde7cc57b"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "出差信息表",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "ConfirmText": "您确定添加这条记录?",
+              "UpdateBindingValues": []
+            }
+          ],
+          "ID": "90bcd453-34e8-49ed-b287-c91a2a67bf3a"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1006 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 65.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      }
+    },
+    "Count": 30
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67
+    ],
+    "Count": 68
+  },
+  "Values": {
+    "1,2": "出差流程",
+    "1,43": "申请人：",
+    "1,49": "申请日期：",
+    "1,58": "申请日期",
+    "4,1": "填写计划申请表（出差人）",
+    "5,58": "出差状态",
+    "6,58": "流程条状态",
+    "6,62": "if=iODATA(\"申请表状态?$select=流程条状态&$filter=工作流状态 eq \"&IF(ISBLANK(BI5),\"null\",\"'\"&BI5&\"'\"))",
+    "7,58": "当前用户中文名",
+    "7,63": "%CurrentUser.中文名%",
+    "8,58": "创建者",
+    "9,58": "创建者中文名"
+  },
+  "Formulas": {
+    "1,45": "IF(ISBLANK(BL9),BL8,BL10)",
+    "1,33": "\"状态：\"&BK6",
+    "6,62": "IFERROR(ODATA(\"申请表状态?$select=流程条状态&$filter=工作流状态 eq \"&IF(ISBLANK(BK6),\"null\",\"'\"&BK6&\"'\")),\"申请中\")",
+    "1,52": "IF(ISBLANK(BK2),TODAY(),BK2)"
+  },
+  "AttachInfos": {
+    "1,33": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "Placement": {
+              "SerializeProperty": "=出差流程!AH2"
+            },
+            "PageName": "状态历史",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal2"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ISBLANK(出差流程!$BK$6)"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsInvisible": true
+          }
+        ]
+      }
+    },
+    "1,62": {
+      "BindingInfo": {
+        "TableName": "出差信息表",
+        "ColumnName": "FGC_CreateDate",
+        "GUID": "48c33fa1-a2fb-4bd0-87db-7e6ffbb9fff1"
+      }
+    },
+    "2,1": {
+      "CellType": {
+        "$type": "Stepper.StepperCellType, Stepper",
+        "ActiveItem": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=出差流程!BK7"
+        },
+        "Items": [
+          {
+            "Text": "申请中",
+            "Commands": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "填写计划申请表（出差人）"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "办公室预定",
+            "Commands": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "办公室预定"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "财务部预算",
+            "Commands": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "财务部预算"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "经理审批",
+            "Commands": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "经理审批"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "财务部借支",
+            "Commands": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "财务部借支"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "票据报销",
+            "Commands": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "票据报销"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "财务部结算",
+            "Commands": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "财务部结算"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "完成",
+            "Commands": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "完成"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "4,1": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "填写计划申请表（出差人）",
+        "OverflowMode": 0
+      }
+    },
+    "5,62": {
+      "BindingInfo": {
+        "TableName": "出差信息表",
+        "ColumnName": "FGC_State",
+        "GUID": "1ccefe99-f08b-464e-b238-91bfc9a4b328"
+      }
+    },
+    "8,63": {
+      "BindingInfo": {
+        "TableName": "出差信息表",
+        "ColumnName": "FGC_Creator",
+        "GUID": "267e0c8a-22c1-4e60-8c33-ed1625f7e33b"
+      }
+    },
+    "9,63": {
+      "BindingInfo": {
+        "TableName": "出差信息表",
+        "ColumnName": "FGC_Creator",
+        "GUID": "e3a544e1-3316-4652-9858-b7fa71848c15",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 5,
+          "AttachTypeTag": "中文名"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "FontWeight": 1,
+        "Foreground": 2
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 2
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 2
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 2,
+        "Formatter": 4
+      },
+      {
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 2,
+        "BorderBottom": null,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 25",
+        "Right",
+        "yyyy-MM-dd",
+        "Left",
+        "Background 1 -15",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,33": 1,
+      "1,43": 2,
+      "1,44": 3,
+      "1,45": 3,
+      "1,49": 3,
+      "1,50": 3,
+      "1,51": 3,
+      "1,52": 4,
+      "1,57": 5,
+      "1,58": 6,
+      "1,59": 7,
+      "1,60": 7,
+      "1,61": 7,
+      "1,62": 7,
+      "2,1": 8,
+      "2,2": 9,
+      "2,3": 9,
+      "2,4": 9,
+      "2,5": 9,
+      "2,6": 9,
+      "2,7": 9,
+      "2,8": 9,
+      "2,9": 9,
+      "2,10": 9,
+      "2,11": 9,
+      "2,12": 9,
+      "2,13": 9,
+      "2,14": 9,
+      "2,15": 9,
+      "2,16": 9,
+      "2,17": 9,
+      "2,18": 9,
+      "2,19": 9,
+      "2,20": 9,
+      "2,21": 9,
+      "2,22": 9,
+      "2,23": 9,
+      "2,24": 9,
+      "2,25": 9,
+      "2,26": 9,
+      "2,27": 9,
+      "2,28": 9,
+      "2,29": 9,
+      "2,30": 9,
+      "2,31": 9,
+      "2,32": 9,
+      "2,33": 9,
+      "2,34": 9,
+      "2,35": 9,
+      "2,36": 9,
+      "2,37": 9,
+      "2,38": 9,
+      "2,39": 9,
+      "2,40": 9,
+      "2,41": 9,
+      "2,42": 9,
+      "2,43": 9,
+      "2,44": 9,
+      "2,45": 9,
+      "2,46": 9,
+      "2,47": 9,
+      "2,48": 9,
+      "2,49": 9,
+      "2,50": 9,
+      "2,51": 9,
+      "2,52": 9,
+      "2,53": 9,
+      "2,54": 9,
+      "2,55": 9,
+      "2,56": 9,
+      "2,57": 10,
+      "3,1": 10,
+      "3,2": 10,
+      "3,3": 10,
+      "3,4": 10,
+      "3,5": 10,
+      "3,6": 10,
+      "3,7": 10,
+      "3,8": 10,
+      "3,9": 10,
+      "3,10": 10,
+      "3,11": 10,
+      "3,12": 10,
+      "3,13": 10,
+      "3,14": 10,
+      "3,15": 10,
+      "3,16": 10,
+      "3,17": 10,
+      "3,18": 10,
+      "3,19": 10,
+      "3,20": 10,
+      "3,21": 10,
+      "3,22": 10,
+      "3,23": 10,
+      "3,24": 10,
+      "3,25": 10,
+      "3,26": 10,
+      "3,27": 10,
+      "3,28": 10,
+      "3,29": 10,
+      "3,30": 10,
+      "3,31": 10,
+      "3,32": 10,
+      "3,33": 10,
+      "3,34": 10,
+      "3,35": 10,
+      "3,36": 10,
+      "3,37": 10,
+      "3,38": 10,
+      "3,39": 10,
+      "3,40": 10,
+      "3,41": 10,
+      "3,42": 10,
+      "3,43": 10,
+      "3,44": 10,
+      "3,45": 10,
+      "3,46": 10,
+      "3,47": 10,
+      "3,48": 10,
+      "3,49": 10,
+      "3,50": 10,
+      "3,51": 10,
+      "3,52": 10,
+      "3,53": 10,
+      "3,54": 10,
+      "3,55": 10,
+      "3,56": 10,
+      "3,57": 10,
+      "5,58": 11,
+      "5,62": 12,
+      "5,63": 12,
+      "5,64": 12,
+      "5,65": 12,
+      "5,66": 12,
+      "5,67": 12,
+      "9,58": 13,
+      "9,59": 14,
+      "9,60": 14,
+      "9,61": 14,
+      "9,62": 14,
+      "9,63": 14,
+      "9,64": 14,
+      "9,65": 14,
+      "9,66": 14,
+      "9,67": 14
+    },
+    "ColStyles": {
+      "58": 15,
+      "59": 15,
+      "60": 15,
+      "61": 15,
+      "62": 15,
+      "63": 15,
+      "64": 15,
+      "65": 15,
+      "66": 15,
+      "67": 15
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,33,1,9",
+    "1,45,1,4",
+    "1,62,1,6",
+    "4,1,26,56",
+    "5,62,1,6",
+    "6,62,1,6",
+    "7,63,1,5",
+    "8,63,1,5",
+    "9,63,1,5",
+    "2,1,1,56",
+    "1,52,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "母版页",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                      "tableData": {
+                        "TableName": "出差信息表",
+                        "ColumnName": "FGC_State",
+                        "GUID": "8c6edead-edde-4b65-a09c-ec6a14d51277"
+                      }
+                    },
+                    "value": "新建"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                      "tableData": {
+                        "TableName": "出差信息表",
+                        "ColumnName": "FGC_State",
+                        "GUID": "136923de-ff35-4569-8b37-3e7cd03c52b0"
+                      }
+                    },
+                    "value": "%Null%"
+                  },
+                  "RelationType": 1
+                },
+                "Condition2": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                    "tableData": {
+                      "TableName": "出差信息表",
+                      "ColumnName": "FGC_State",
+                      "GUID": "87e116ee-ac33-4dd8-b245-27576b21f886"
+                    }
+                  },
+                  "value": "审批被拒绝"
+                },
+                "RelationType": 1
+              },
+              "Condition2": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                  "tableData": {
+                    "TableName": "出差信息表",
+                    "ColumnName": "FGC_State",
+                    "GUID": "042e00af-1e60-4d5e-afa8-4831f4a34b01"
+                  }
+                },
+                "value": "完成"
+              },
+              "RelationType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "填写计划申请表（出差人）"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B3"
+                    },
+                    "Value": "申请中"
+                  }
+                ]
+              }
+            ],
+            "ID": "453f930c-a412-4578-8000-8e853c09fcae"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                "tableData": {
+                  "TableName": "出差信息表",
+                  "ColumnName": "FGC_State",
+                  "GUID": "630e5420-337c-4631-b33a-aa6bdb81687d"
+                }
+              },
+              "value": "办公室预定"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "办公室预定"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B3"
+                    },
+                    "Value": "办公室预定"
+                  }
+                ]
+              }
+            ],
+            "ID": "a97ddafa-b00c-4ff8-987d-10a4497c6b46"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                "tableData": {
+                  "TableName": "出差信息表",
+                  "ColumnName": "FGC_State",
+                  "GUID": "ae9b8b6f-f711-42df-948c-45c041dab9e9"
+                }
+              },
+              "value": "财务部预算"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "财务部预算"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B3"
+                    },
+                    "Value": "财务部预算"
+                  }
+                ]
+              }
+            ],
+            "ID": "430c494d-d9b9-4b23-adf9-72c11f41dd99"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                "tableData": {
+                  "TableName": "出差信息表",
+                  "ColumnName": "FGC_State",
+                  "GUID": "6600fea9-6044-4ae4-900c-e95f882607a7"
+                }
+              },
+              "value": "待经理审批",
+              "compareType": 6
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "经理审批"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B3"
+                    },
+                    "Value": "经理审批"
+                  }
+                ]
+              }
+            ],
+            "ID": "b79eae2e-ff5d-4bac-a706-187c03446a6d"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                "tableData": {
+                  "TableName": "出差信息表",
+                  "ColumnName": "FGC_State",
+                  "GUID": "c174c412-f7c5-4bdc-987d-78c07b363c76"
+                }
+              },
+              "value": "财务部借支"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "财务部借支"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B3"
+                    },
+                    "Value": "财务部借支"
+                  }
+                ]
+              }
+            ],
+            "ID": "24e98642-1adc-4fd8-a24f-5438a60e24d7"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                "tableData": {
+                  "TableName": "出差信息表",
+                  "ColumnName": "FGC_State",
+                  "GUID": "13334b11-c758-4440-b7ba-ee1dfec3624b"
+                }
+              },
+              "value": "票据报销"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "票据报销"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B3"
+                    },
+                    "Value": "票据报销"
+                  }
+                ]
+              }
+            ],
+            "ID": "16c47718-0293-4e3d-b309-a088f25dd37e"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                "tableData": {
+                  "TableName": "出差信息表",
+                  "ColumnName": "FGC_State",
+                  "GUID": "8686858a-c335-4a54-9ff0-67645c54d3f1"
+                }
+              },
+              "value": "财务部结算"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "财务部结算"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B3"
+                    },
+                    "Value": "财务部结算"
+                  }
+                ]
+              }
+            ],
+            "ID": "002e3dcf-0a9d-449d-b6a0-5367bcac5e0d"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B5"
+                    },
+                    "Value": "填写计划申请表（出差人）"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=出差流程!B3"
+                    },
+                    "Value": "申请中"
+                  }
+                ]
+              }
+            ],
+            "ID": "5b147f9a-a8d0-47b3-b110-bc4d703ea478"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "5d0224fc-ffd5-47aa-9863-cf20a9d23e55.png",
+      "DisplayName": "背景图1",
+      "StyleInfo": {
+        "Fill": "Background 1 0"
+      },
+      "IsAutomaticFill": false,
+      "Location": "15,15",
+      "Size": "1105,98"
+    },
+    {
+      "Name": "5289b651-103e-4974-87d5-5ffad67ad0ca.png",
+      "DisplayName": "背景图2",
+      "StyleInfo": {
+        "Fill": "#FFEAECEF"
+      },
+      "IsAutomaticFill": false,
+      "Size": "1335,635"
+    },
+    {
+      "Name": "6a5583f2-b399-4e68-afcf-2357ded2391f.png",
+      "DisplayName": "背景图3",
+      "StyleInfo": {
+        "Fill": "Background 1 0"
+      },
+      "IsAutomaticFill": false,
+      "Location": "15,15",
+      "Size": "1105,98"
+    }
+  ]
+}//9t7NhF2IX2U2CJqIIXpvUDbxpJvF0ON47G6A5nvBpAWkh3QziuuyLWt9mkP1COHa8Ao5QEC+UbK66zyvlcYa9b1jHhoR3DH51VfPxpLEY8Zl7OE45DLMw0O9LgpiChh2rzBoqlG4VWwVY7CeGsQUbr0cRjUXoWCIJkaQ7YL/wDszvLe65Qa0pf/0iz/3m+QeagVcr0PojOKC+2bxuIQRo1vq+k42J7CN7Ek0CKdllMCuvpwHsC1fWi5PrkiQ1OsUE+ig/PluX5h8/k4uZiBbaMuSAkv9CEUdVNfd/emp+cYUId74zF+12ahPIV5AQ1/QRY9YOXOjxmO1cBVlmOZr3Bo553LcH5KIVamsebVdcKlhFvJXXZItPVTcLzksuYxhTXGxd37AgiO7quQVuN2MRSheAzTKCSVZaClT9yo5nZFlApcIib5/d2R61XELJgvhWHKQPPTNk6nUB5ZW7gid0jYzRgDmdNJh8O0T1640F59Z12dLwLIImn9dmHR6UzV1B2b4l/QPcpvj0zno5bLtPhDWCnfLAWkr8540IBkUCKUiH8c4q585rT3tcU/AhNUSsfy6yP/7xtGMIXmEVqnviZKWmKj34MXO8NbQyg80tqZOuK/pyxaPjR1THpsxo9H0F/24lL6GuH2PA9V6cDoRASyNlq+tZEhUgvxH0N7FpTIkMC4YrKAA2O8GXWE1Y2UzatRWLMexvmSSdxWyfB9tTz8SRBK9s50d+u/shZylH52o8CK204cLFwtBm2sciBoZ2t3JP8agi1kzynuLR9RycbyUGU8pYW725jMIUOc/aa9DQAjsZPp1PCCjRPmGuHun9H2TGiGLVW2coqFhe8oc1sigHBGoZOKVoW7HfWw9EiW4FUe5StNDqAlodYgQ7/KAbSREEBb2BSDp6kJmTWNN0w==|920

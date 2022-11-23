@@ -1,0 +1,21 @@
+{
+  "Name": "出差信息表及相关子表保存按钮命令",
+  "ID": "001d9c28-1d9f-4b83-b1d2-926f84af96c0",
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "出差信息表",
+      "ShowConfirm": false,
+      "ConfirmText": "您确定要更新这行记录吗？",
+      "UpdateBindingValues": [],
+      "ParamNameToSaveNewRowValue": "NewRow"
+    },
+    {
+      "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+      "ShareCommandContainerRefer": {
+        "ShareCommandContainerID": "f708739e-b750-41bb-b963-ace6c633c557"
+      },
+      "ReturnPropertiesTo": []
+    }
+  ]
+}

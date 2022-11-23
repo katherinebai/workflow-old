@@ -1,0 +1,37 @@
+{
+  "BasePathName": "01Forguncy",
+  "FontFamily": "微软雅黑",
+  "ThemeColors": {
+    "Name": "自定义1",
+    "Colors": {
+      "Name": "",
+      "ColorList": [
+        "#FFFFFFFF",
+        "#FFEAEBDE",
+        "#FF000000",
+        "#FF042531",
+        "#FF1CA1C1",
+        "#FF86BA45",
+        "#FFEBC54B",
+        "#FFEA772A",
+        "#FFD52F2B",
+        "#FF5555AA",
+        "#00FFFFFF",
+        "#00FFFFFF"
+      ],
+      "BackgroundColor1": "#FFFFFFFF",
+      "BackgroundColor2": "#FFEAEBDE",
+      "TextColor1": "#FF000000",
+      "TextColor2": "#FF042531",
+      "Accent1": "#FF1CA1C1",
+      "Accent2": "#FF86BA45",
+      "Accent3": "#FFEBC54B",
+      "Accent4": "#FFEA772A",
+      "Accent5": "#FFD52F2B",
+      "Accent6": "#FF5555AA",
+      "Hyperlink": "#00FFFFFF",
+      "FollowedHyperlink": "#00FFFFFF"
+    },
+    "Category": "自定义"
+  }
+}

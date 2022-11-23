@@ -1,0 +1,10 @@
+{
+  "Name": "弹出保存成功消息框",
+  "ID": "f708739e-b750-41bb-b963-ace6c633c557",
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+      "MessageFormula": "保存成功！\r\n如果确保没有问题后请点击【提交】进入下一个流程。"
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+[
+  {
+    "ModuleName": "Tables/字典表",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/交通工具",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差地点",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差类型",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/申请表状态",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差费用预算项目表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/费用预算子项目表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/用户信息视图",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/人民币大写对应表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/出差信息表_工作流历史视图",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差费用借支表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差行程表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/出差预定清单视图",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差预定表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差预算表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差借款额度表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差信息表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/预定及票据清单明细视图",
+    "ModuleType": 23,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/票据报销清单表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/出差结算汇率表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Pages/内建手机页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/FGC_401页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_修改密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_修改用户信息_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_忘记密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_登录_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_维护中_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_邮件订阅_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_重置密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_重置密码发送邮件成功_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_两步验证_扫码页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_两步验证_验证页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/内建页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/FGC_401页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_修改密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_修改用户信息",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_忘记密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_登录",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_维护中",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_邮件订阅",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_重置密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_重置密码发送邮件成功",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_两步验证_扫码页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_两步验证_验证页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/出差流程",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/出差流程/各项票据报销",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/交通费明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/住宿费明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/其他费用明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/招待费明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/生活费明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/出差流程/辅助页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/提交工作流",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/查看大图",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/状态历史",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/选择出差人",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/出差流程",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/办公室预定",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/填写计划申请表（出差人）",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/完成",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/票据报销",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/经理审批",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/财务部借支",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/财务部结算",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/财务部预算",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/历史申请表",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/历史申请表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/待处理页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/待处理申请表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/打印",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/JPY打印报销单",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/JPY打印票据明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/RMB打印报销单",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/RMB打印票据明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/USD打印报销单",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/USD打印票据明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/费用统计",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/交通费用明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/住宿费用明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/其它费用明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/出差汇总明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/出差费用明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/出差预算实际对比分析",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/招待费用明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/生活费用明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/首页",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MasterPCPage/FGC_母版页",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/母版页",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "ShareCommandContainer/出差邮件",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/添加或更新出差信息表",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/添加或更新出差借款额度表",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/添加或更新出差结算汇率表",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/弹出保存成功消息框",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/出差信息表及相关子表保存按钮命令",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ApplicationSetting",
+    "ModuleType": 8
+  },
+  {
+    "ModuleName": "Theme",
+    "ModuleType": 9
+  },
+  {
+    "ModuleName": "Image/内建登录配图.jpg",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/费用明细页面.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/费用明细.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/组织架构.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/票据明细pdf.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/申请1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/申请.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/汇总1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/汇总.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/查看待处理出差申请.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/查看出差单.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/新建出差单.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/报销单pdf.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/报销单.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/打印票据明细.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/待处理详情页面.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/待处理1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/待处理.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/帮助1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/帮助.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/历史出差申请表.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/历史1.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/历史.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/出差流程图.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/出差汇总列表.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/出差单状态.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/预算对比.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/预算对比页面.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "UserService",
+    "ModuleType": 11
+  },
+  {
+    "ModuleName": "CustomLibrary",
+    "ModuleType": 12
+  },
+  {
+    "ModuleName": "MapJsonFile",
+    "ModuleType": 14
+  },
+  {
+    "ModuleName": "DataContectionSet",
+    "ModuleType": 25
+  },
+  {
+    "ModuleName": "Upload",
+    "ModuleType": 26
+  }
+]

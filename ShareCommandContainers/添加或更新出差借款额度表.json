@@ -1,0 +1,162 @@
+{
+  "Name": "添加或更新出差借款额度表",
+  "ID": "95ff1b73-5a94-48d1-bf45-96b9cccc9beb",
+  "Params": [
+    {
+      "ID": "2a2f157d-fb35-4551-8e12-0c40d2dbde6a",
+      "Name": "出差ID"
+    },
+    {
+      "ID": "a5ad640a-3bcf-42d3-9056-d15192d0b68e",
+      "Name": "CNY"
+    },
+    {
+      "ID": "9853c0b5-c40c-41bd-91e5-f1698e4b6642",
+      "Name": "USD"
+    },
+    {
+      "ID": "2c26046a-da2a-46cc-b807-a82255d404cb",
+      "Name": "JPY"
+    },
+    {
+      "ID": "94ddf4b4-de34-4174-9c34-fcbe084b61a7",
+      "Name": "借款额度表行数"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+              "cellLocations": [
+                {
+                  "SerializeProperty": "=借款额度表行数"
+                }
+              ]
+            },
+            "value": "0"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "出差借款额度表",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "ConfirmText": "您确定添加这条记录?",
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "出差借款额度表",
+                    "ColumnName": "出差ID",
+                    "GUID": "7907b597-5629-44a8-97d3-450a49d65d0f"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=出差ID"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "出差借款额度表",
+                    "ColumnName": "CNY",
+                    "GUID": "66ac9df3-d422-4149-8d6e-cf312dceb3e7"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=CNY"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "出差借款额度表",
+                    "ColumnName": "USD",
+                    "GUID": "db30e17b-8565-42a6-b571-0cece3226cf7"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=USD"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "出差借款额度表",
+                    "ColumnName": "JPY",
+                    "GUID": "ab33476e-4c74-46f9-8b48-f5f63a7b2450"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=JPY"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "4f929b47-44ec-4b00-9ee4-83fda63f7bf3"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "出差借款额度表",
+              "ShowConfirm": false,
+              "ConfirmText": "您确定要更新这行记录吗？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "出差借款额度表",
+                  "ColumnName": "出差ID",
+                  "GUID": "5a079b3e-05a1-4a10-9d5d-22ba5d7ef3df"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=出差ID"
+                }
+              },
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "出差借款额度表",
+                    "ColumnName": "CNY",
+                    "GUID": "9c8a4fd3-01ac-4ddb-ab15-82397b7fd88c"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=CNY"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "出差借款额度表",
+                    "ColumnName": "USD",
+                    "GUID": "53fb99c1-3e5f-45f5-a60e-7241182bb818"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=USD"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "出差借款额度表",
+                    "ColumnName": "JPY",
+                    "GUID": "3cb1cb50-d89d-4f2d-814f-f3956d936abe"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=JPY"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "c0dc48d8-351f-49c5-9dc8-41194b30ede6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "Name": "添加或更新出差结算汇率表",
+  "ID": "af4d343f-2dde-4b7e-8459-5605e267a114",
+  "Params": [
+    {
+      "ID": "77f74ff4-d953-484e-81e7-c9f16e754a86",
+      "Name": "出差ID"
+    },
+    {
+      "ID": "c1269570-f2a5-4155-a480-1e2b31812ed6",
+      "Name": "美元汇率"
+    },
+    {
+      "ID": "30a35920-8705-41f8-9566-4fbaa5a9e60f",
+      "Name": "日元汇率"
+    },
+    {
+      "ID": "738ebc83-378e-4604-849c-2b9db4e70ede",
+      "Name": "结算汇率表个数"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+              "cellLocations": [
+                {
+                  "SerializeProperty": "=结算汇率表个数"
+                }
+              ]
+            },
+            "value": "0"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "出差结算汇率表",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "ConfirmText": "您确定添加这条记录?",
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "出差结算汇率表",
+                    "ColumnName": "出差ID",
+                    "GUID": "3d1baf0c-afbf-4538-b040-f87d5d9389ac"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=出差ID"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "出差结算汇率表",
+                    "ColumnName": "美元汇率",
+                    "GUID": "009eb80f-5d8e-4ba1-928e-0637d6801998"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=美元汇率"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "出差结算汇率表",
+                    "ColumnName": "日元汇率",
+                    "GUID": "938f6278-6e39-4873-a7b7-556ec9574894"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=日元汇率"
+                  }
+                }
+              ],
+              "ParamNameToSaveNewRowValue": "NewRow"
+            }
+          ],
+          "ID": "a7a2cccf-cde2-47eb-b46d-b979d240bc93"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "出差结算汇率表",
+              "ShowConfirm": false,
+              "ConfirmText": "您确定要更新这行记录吗？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "出差结算汇率表",
+                  "ColumnName": "出差ID",
+                  "GUID": "2cc3f2fa-f2d4-46de-a9af-f0cfae67b005"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=出差ID"
+                }
+              },
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "出差结算汇率表",
+                    "ColumnName": "美元汇率",
+                    "GUID": "66ce4bb1-4ddd-4164-aefe-cdb96556e10c"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=美元汇率"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "出差结算汇率表",
+                    "ColumnName": "日元汇率",
+                    "GUID": "9993c68e-c9b7-4205-8364-c061c75485e0"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=日元汇率"
+                  }
+                }
+              ],
+              "ParamNameToSaveNewRowValue": "NewRow"
+            }
+          ],
+          "ID": "322344be-8959-4ca3-b95b-ea78b782e86b"
+        }
+      ]
+    }
+  ]
+}

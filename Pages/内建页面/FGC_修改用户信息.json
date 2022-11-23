@@ -1,0 +1,454 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 26
+  },
+  "Cols": {
+    "Count": 47
+  },
+  "Values": {
+    "5,11": "修改用户信息",
+    "12,14": "头像",
+    "16,14": "显示名",
+    "18,14": "电子邮箱",
+    "21,24": "保存",
+    "21,29": "取消"
+  },
+  "AttachInfos": {
+    "9,17": {
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_Shadow_EmptyText",
+        "UploadImageLimit": {
+          "IsCompressImage": true,
+          "MaxWidth": 300.0,
+          "MaxHeight": 300.0
+        },
+        "ForguncyAttribute": "ChangeProfile_Picture"
+      }
+    },
+    "16,15": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImageSizeMode": 0,
+        "HorizontalAlignment": 0,
+        "VerticalAlignment": 0,
+        "ImagePath": "StarIndicator.png",
+        "BuiltIn": true
+      }
+    },
+    "16,17": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ForguncyAttribute": "ChangeProfile_FullName"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "18,15": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImageSizeMode": 0,
+        "HorizontalAlignment": 0,
+        "VerticalAlignment": 0,
+        "ImagePath": "StarIndicator.png",
+        "BuiltIn": true
+      }
+    },
+    "18,17": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ForguncyAttribute": "ChangeProfile_Email"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "21,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "保存",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Normal_Style2",
+        "ForguncyAttribute": "ChangeProfile_Button"
+      }
+    },
+    "21,29": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "取消"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 37.33333206176758,
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "Foreground": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 14.0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Background": null,
+        "Foreground": null,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontWeight": 4,
+        "Foreground": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontWeight": 4,
+        "Foreground": 5,
+        "TextIndent": 0,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 25",
+        "Text 1 35",
+        "Right",
+        "@",
+        "Bold",
+        "Accent 1 0",
+        "Center",
+        "Body",
+        "Normal",
+        "General"
+      ]
+    },
+    "CellStyles": {
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "5,16": 0,
+      "5,17": 0,
+      "5,18": 0,
+      "5,19": 0,
+      "5,20": 0,
+      "5,21": 0,
+      "5,22": 0,
+      "5,23": 0,
+      "5,24": 0,
+      "5,25": 0,
+      "6,11": 0,
+      "6,12": 0,
+      "6,13": 0,
+      "6,14": 0,
+      "6,15": 0,
+      "6,16": 0,
+      "6,17": 0,
+      "6,18": 0,
+      "6,19": 0,
+      "6,20": 0,
+      "6,21": 0,
+      "6,22": 0,
+      "6,23": 0,
+      "6,24": 0,
+      "6,25": 0,
+      "7,11": 0,
+      "7,12": 0,
+      "7,13": 0,
+      "7,14": 0,
+      "7,15": 0,
+      "7,16": 0,
+      "7,17": 0,
+      "7,18": 0,
+      "7,19": 0,
+      "7,20": 0,
+      "7,21": 0,
+      "7,22": 0,
+      "7,23": 0,
+      "7,24": 0,
+      "7,25": 0,
+      "9,17": 1,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,24": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,19": 2,
+      "10,20": 2,
+      "10,21": 2,
+      "10,22": 2,
+      "10,23": 2,
+      "10,24": 2,
+      "10,25": 2,
+      "10,26": 2,
+      "10,27": 2,
+      "10,28": 2,
+      "10,29": 2,
+      "10,30": 2,
+      "10,31": 2,
+      "10,32": 2,
+      "11,17": 2,
+      "11,18": 2,
+      "11,19": 2,
+      "11,20": 2,
+      "11,21": 2,
+      "11,22": 2,
+      "11,23": 2,
+      "11,24": 2,
+      "11,25": 2,
+      "11,26": 2,
+      "11,27": 2,
+      "11,28": 2,
+      "11,29": 2,
+      "11,30": 2,
+      "11,31": 2,
+      "11,32": 2,
+      "12,14": 3,
+      "12,17": 2,
+      "12,18": 2,
+      "12,19": 2,
+      "12,20": 2,
+      "12,21": 2,
+      "12,22": 2,
+      "12,23": 2,
+      "12,24": 2,
+      "12,25": 2,
+      "12,26": 2,
+      "12,27": 2,
+      "12,28": 2,
+      "12,29": 2,
+      "12,30": 2,
+      "12,31": 2,
+      "12,32": 2,
+      "13,17": 2,
+      "13,18": 2,
+      "13,19": 2,
+      "13,20": 2,
+      "13,21": 2,
+      "13,22": 2,
+      "13,23": 2,
+      "13,24": 2,
+      "13,25": 2,
+      "13,26": 2,
+      "13,27": 2,
+      "13,28": 2,
+      "13,29": 2,
+      "13,30": 2,
+      "13,31": 2,
+      "13,32": 2,
+      "14,17": 2,
+      "14,18": 2,
+      "14,19": 2,
+      "14,20": 2,
+      "14,21": 2,
+      "14,22": 2,
+      "14,23": 2,
+      "14,24": 2,
+      "14,25": 2,
+      "14,26": 2,
+      "14,27": 2,
+      "14,28": 2,
+      "14,29": 2,
+      "14,30": 2,
+      "14,31": 2,
+      "14,32": 2,
+      "16,14": 3,
+      "16,17": 4,
+      "16,18": 5,
+      "16,19": 5,
+      "16,20": 5,
+      "16,21": 5,
+      "16,22": 5,
+      "16,23": 5,
+      "16,24": 5,
+      "16,25": 5,
+      "16,26": 5,
+      "16,27": 5,
+      "16,28": 5,
+      "16,29": 5,
+      "16,30": 5,
+      "16,31": 5,
+      "16,32": 5,
+      "18,14": 3,
+      "18,17": 4,
+      "18,18": 5,
+      "18,19": 5,
+      "18,20": 5,
+      "18,21": 5,
+      "18,22": 5,
+      "18,23": 5,
+      "18,24": 5,
+      "18,25": 5,
+      "18,26": 5,
+      "18,27": 5,
+      "18,28": 5,
+      "18,29": 5,
+      "18,30": 5,
+      "18,31": 5,
+      "18,32": 5,
+      "21,24": 6,
+      "21,25": 7,
+      "21,26": 7,
+      "21,27": 7,
+      "21,28": 7,
+      "21,29": 8,
+      "21,30": 8,
+      "21,31": 8,
+      "21,32": 8,
+      "21,33": 8,
+      "22,24": 7,
+      "22,25": 7,
+      "22,26": 7,
+      "22,27": 7,
+      "22,28": 7,
+      "22,29": 8,
+      "22,30": 8,
+      "22,31": 8,
+      "22,32": 8,
+      "22,33": 8
+    },
+    "SheetStyle": {
+      "Background": null,
+      "FontFamily": 7,
+      "FontStretch": 8,
+      "FontStyle": 8,
+      "FontWeight": 8,
+      "Foreground": null,
+      "Formatter": null,
+      "TextIndent": 0,
+      "HorizontalAlignment": 9,
+      "VerticalAlignment": 6,
+      "WordWrap": false,
+      "Underline": false,
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "5,11,3,15",
+    "9,17,6,16",
+    "16,17,1,16",
+    "18,17,1,16",
+    "21,24,2,5",
+    "21,29,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "FGC_母版页",
+    "MobilePageName": "FGC_修改用户信息_手机版",
+    "Title": "修改用户信息",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "5eb739c3-15b6-4d8f-9c34-066f9a907711.png",
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "200,80",
+      "Size": "540,440"
+    }
+  ]
+}///i9dGBtkBhrqP437ZG1MNgwJcDhEWU0Hya/3arxjSfiPc0X7CRYCY8Nf7ZIaN6KRzUziX9PFbPXhcs0y4aOCAu8QFv+1d50fgwNgiBwDfGO52sQilwIi9K+U1aXWaY5ID2oIdeAXKQwZWisvbfPmn3xZgveB335zUEBtfXbtfo/9/emb3TXeAeeHeH2l+MdL3uiXQkjfA3GM3QhcpKOozEhJD1Axp3lL1IPsjquFSLn6d0ItMq52ejdc2iLqSEOLRIQ/Qrf3cnskqDzmXwQdpY3/ipiIYfQdopbxkgfGaHR99lR2D5jc3GCYNpL/FbzPqfrwh+8jqssB+WsYhtRrJ0JMn70zfeBDu4KCi97i6v2I9/5vS2BxZ3Lgq6QOPjFXbjcip+ndM143WeZsLaDrFmtCO8mzyzbW+jZUpO0dOlXs8MvGXWoelBK3t0g5/MgVdo+edny4yEuhVB/GINi+ET/ilbmH4G/JInTf1WVb5nt/Ce69JkDt5E+i7aGOQnFJBCjkuJrfcANtRvIgzIvuFQWfFIq8yRzS8/Q3qlL1p2QKL6AomhjRk7TWHa4Fm0rlcogYPYc307P1KO3UbkONzGcrsAejStj6LBKV4h16yhVA8Ms8KYW7PMHRuUsZqmGaLqRuuhoRSPtUIKsZ2XYNj6gLAL5fh2NxMn6yxQgX4W+299bIe0cfZaTaEomTfm/WvDLm1tUGb+4oWrZxcp2PFKn1sGwEoGJd8UhZqWflCk6OpNZ1TT3n4Zm8POBS8IshZ6eTI00CRLJ10er4thRp0u30453kGWO+fogHbcl5A/ejvymGI21LUqIW9sESAL4lj5KWIlY4bT+FE4GELpXuihfFnK7hGTY7Y/sn4lZb/3Do52fUuurAVsWTBOq7pQKp4bhET6LULyxct/rRaOGQ4Q==|920

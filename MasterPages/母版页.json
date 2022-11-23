@@ -1,0 +1,821 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "Count": 36
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 9.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "59": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "60": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 133.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      60
+    ],
+    "Count": 61
+  },
+  "Values": {
+    "1,1": "出差管理系统",
+    "1,6": "",
+    "1,53": " ",
+    "5,60": "待处理项个数"
+  },
+  "Formulas": {
+    "6,60": "IFERROR(ODATA(\"出差信息表/$count?$filter=contains(担当者,\"&IF(ISBLANK(BC2),\"null\",\"'\"&BC2&\"'\")&\")\"),0)",
+    "1,52": "BI7"
+  },
+  "AttachInfos": {
+    "1,6": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "ga('send', 'event', 'Demo Click', '活字格', '出差管理系统');",
+            "ID": "0ae41bebca8e4735bb319964ad84cb38"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "URL": "http://www.grapecity.com.cn/enterprise-solutions/huozige/",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ToolTip": "了解活字格",
+        "HorizontalAlignment": 0,
+        "ImagePath": "Mobile/453_help_2.svg",
+        "BuiltIn": true,
+        "Color": "#FF94A1B3"
+      }
+    },
+    "1,51": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "待处理申请表",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ToolTip": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=IF(母版页!BI7>0,\"有\"&母版页!BI7&\"条未处理出差记录\",\"没有未处理记录\")"
+        },
+        "ImagePath": "Mobile/413_notice_2.svg",
+        "BuiltIn": true,
+        "Color": "#FF94A1B3"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=母版页!$BA$2=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsInvisible": true
+          }
+        ]
+      }
+    },
+    "1,52": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "待处理申请表",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ClickMode": 1,
+        "TemplateKey": "通知"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=母版页!$BA$2=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsInvisible": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 8,
+            "Value1": "=0",
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsInvisible": true
+          }
+        ]
+      }
+    },
+    "1,54": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowNotification": false,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "4,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "导航菜单",
+        "Items": [
+          {
+            "Text": " ",
+            "IconPath": "申请1.png",
+            "IsBuiltInIconPath": false,
+            "SelectedIconColor": "Background 1",
+            "IconColor": null,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "出差流程",
+                "PassValues": [],
+                "IgnoreTargetPageCachedCurrentRowInfo": false,
+                "LoadBindingDataOption": 2
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": " ",
+            "IconPath": "待处理1.png",
+            "IsBuiltInIconPath": false,
+            "SelectedIconColor": "Background 1",
+            "IconColor": null,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "待处理申请表",
+                "PassValues": [],
+                "IgnoreTargetPageCachedCurrentRowInfo": false
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Text": " ",
+            "IconPath": "历史1.png",
+            "IsBuiltInIconPath": false,
+            "SelectedIconColor": "Background 1",
+            "IconColor": null,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "历史申请表",
+                "PassValues": [],
+                "IgnoreTargetPageCachedCurrentRowInfo": false
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": " ",
+            "Text": " ",
+            "IconPath": "汇总1.png",
+            "IsBuiltInIconPath": false,
+            "SelectedIconColor": "Background 1",
+            "IconColor": null,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "出差汇总明细",
+                "PassValues": [],
+                "IgnoreTargetPageCachedCurrentRowInfo": false
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_LoginUser"
+            ]
+          },
+          {
+            "Value": " ",
+            "Text": " ",
+            "IconPath": "帮助1.png",
+            "IsBuiltInIconPath": false,
+            "SelectedIconColor": "Background 1",
+            "IconColor": null,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "首页",
+                "PassValues": [],
+                "IgnoreTargetPageCachedCurrentRowInfo": false
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 26.666666666666664,
+            "Bold": true,
+            "Height": 80.0,
+            "IconHeight": 40.0,
+            "IconWidth": 40.0
+          }
+        ]
+      }
+    },
+    "4,3": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 21.33333396911621,
+        "FontWeight": 0,
+        "Formatter": 1,
+        "TextIndent": 15,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 34.66666793823242,
+        "FontWeight": 3,
+        "Formatter": 1,
+        "TextIndent": 15,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 34.66666793823242,
+        "FontWeight": 3,
+        "Formatter": 1,
+        "TextIndent": 15,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": null,
+        "Foreground": null
+      },
+      {
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "Foreground": 5,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "Foreground": 5,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 7,
+        "FontStretch": 0,
+        "FontStyle": 0,
+        "FontWeight": 0,
+        "Foreground": null,
+        "Formatter": null,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 6,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 16.0,
+        "FontWeight": 3,
+        "Foreground": 9,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 13.333333015441895,
+        "Foreground": 10,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 11,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 13.333333015441895,
+        "Foreground": 10,
+        "Formatter": 1,
+        "HorizontalAlignment": 11
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 12.0,
+        "FontWeight": 3,
+        "Foreground": null,
+        "HorizontalAlignment": 6,
+        "Underline": false
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 13.333333015441895,
+        "Foreground": 12,
+        "Formatter": 1,
+        "HorizontalAlignment": 11
+      },
+      {
+        "FontFamily": 4,
+        "Foreground": 5
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 13.333333015441895,
+        "Foreground": 10,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 11
+      },
+      {
+        "FontSize": 34.66666793823242,
+        "FontWeight": 3,
+        "Formatter": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 4,
+        "Foreground": null,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 7,
+        "FontStretch": 0,
+        "FontStyle": 0,
+        "FontWeight": 0,
+        "Foreground": null,
+        "Formatter": null,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 6,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": null
+      },
+      {
+        "FontFamily": 7,
+        "FontStretch": 0,
+        "FontStyle": 0,
+        "FontWeight": 0,
+        "Foreground": null,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 6,
+        "WordWrap": false,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Normal",
+        "[AUTO]General",
+        "Left",
+        "Bold",
+        "微软雅黑",
+        "Accent 1 -25",
+        "Center",
+        "宋体",
+        "General",
+        "#FF94A1B3",
+        "Background 1",
+        "Right",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "0,4": 0,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 2,
+      "0,17": 2,
+      "0,18": 2,
+      "0,19": 2,
+      "0,20": 2,
+      "0,21": 3,
+      "0,22": 3,
+      "0,23": 3,
+      "0,24": 3,
+      "0,25": 3,
+      "0,26": 2,
+      "0,27": 2,
+      "0,28": 2,
+      "0,29": 2,
+      "0,30": 2,
+      "0,31": 2,
+      "0,32": 2,
+      "0,33": 2,
+      "0,34": 2,
+      "0,35": 2,
+      "0,36": 2,
+      "0,37": 2,
+      "0,38": 2,
+      "0,39": 2,
+      "0,40": 2,
+      "0,41": 2,
+      "0,42": 2,
+      "0,43": 2,
+      "0,44": 4,
+      "0,45": 4,
+      "0,46": 2,
+      "0,47": 2,
+      "0,48": 2,
+      "0,49": 5,
+      "0,50": 5,
+      "0,51": 5,
+      "0,52": 5,
+      "0,53": 5,
+      "0,54": 5,
+      "0,55": 6,
+      "0,56": 5,
+      "0,57": 5,
+      "0,58": 7,
+      "0,59": 8,
+      "0,60": 9,
+      "1,1": 10,
+      "1,6": 11,
+      "1,11": 2,
+      "1,13": 2,
+      "1,14": 2,
+      "1,15": 4,
+      "1,16": 4,
+      "1,17": 4,
+      "1,18": 4,
+      "1,19": 4,
+      "1,20": 4,
+      "1,21": 4,
+      "1,22": 4,
+      "1,23": 4,
+      "1,24": 4,
+      "1,25": 4,
+      "1,26": 4,
+      "1,27": 4,
+      "1,28": 4,
+      "1,29": 4,
+      "1,30": 4,
+      "1,31": 4,
+      "1,32": 4,
+      "1,35": 2,
+      "1,36": 2,
+      "1,37": 4,
+      "1,38": 4,
+      "1,39": 4,
+      "1,40": 4,
+      "1,41": 4,
+      "1,42": 4,
+      "1,43": 4,
+      "1,44": 4,
+      "1,45": 4,
+      "1,46": 4,
+      "1,47": 2,
+      "1,48": 2,
+      "1,51": 12,
+      "1,52": 13,
+      "1,54": 14,
+      "1,55": 15,
+      "1,56": 15,
+      "1,57": 15,
+      "1,58": 15,
+      "1,59": 12,
+      "1,60": 9,
+      "2,6": 16,
+      "2,11": 3,
+      "2,13": 3,
+      "2,14": 3,
+      "2,15": 17,
+      "2,16": 17,
+      "2,17": 17,
+      "2,18": 17,
+      "2,19": 17,
+      "2,20": 17,
+      "2,21": 17,
+      "2,22": 17,
+      "2,23": 17,
+      "2,24": 17,
+      "2,25": 17,
+      "2,26": 17,
+      "2,27": 17,
+      "2,28": 17,
+      "2,29": 17,
+      "2,30": 17,
+      "2,31": 17,
+      "2,32": 17,
+      "2,33": 17,
+      "2,34": 17,
+      "2,35": 3,
+      "2,36": 3,
+      "2,37": 3,
+      "2,38": 3,
+      "2,39": 3,
+      "2,40": 3,
+      "2,41": 3,
+      "2,42": 3,
+      "2,43": 3,
+      "2,44": 3,
+      "2,45": 3,
+      "2,46": 3,
+      "2,47": 3,
+      "2,48": 3,
+      "2,51": 12,
+      "2,52": 18,
+      "2,54": 15,
+      "2,55": 15,
+      "2,56": 15,
+      "2,57": 15,
+      "2,58": 15,
+      "2,59": 12,
+      "2,60": 19,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,15": 2,
+      "3,16": 2,
+      "3,17": 2,
+      "3,18": 2,
+      "3,19": 2,
+      "3,20": 2,
+      "3,21": 3,
+      "3,22": 3,
+      "3,23": 3,
+      "3,24": 3,
+      "3,25": 3,
+      "3,26": 2,
+      "3,27": 2,
+      "3,28": 2,
+      "3,29": 2,
+      "3,30": 2,
+      "3,31": 2,
+      "3,32": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "3,37": 2,
+      "3,38": 2,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
+      "3,42": 2,
+      "3,43": 2,
+      "3,44": 2,
+      "3,45": 2,
+      "3,46": 2,
+      "3,47": 2,
+      "3,48": 2,
+      "3,49": 5,
+      "3,50": 5,
+      "3,51": 5,
+      "3,52": 5,
+      "3,53": 5,
+      "3,54": 5,
+      "3,55": 20,
+      "3,56": 5,
+      "3,57": 5,
+      "3,58": 5,
+      "3,59": 21,
+      "3,60": 9,
+      "4,0": 22,
+      "4,60": 19,
+      "5,60": 23,
+      "6,60": 9,
+      "7,60": 9,
+      "8,60": 9,
+      "9,60": 9,
+      "10,60": 9,
+      "11,60": 9,
+      "12,60": 9,
+      "15,60": 9,
+      "16,60": 9,
+      "17,60": 9,
+      "18,60": 9,
+      "19,60": 9,
+      "20,60": 19,
+      "21,60": 19,
+      "22,60": 19,
+      "23,60": 19,
+      "24,60": 19,
+      "25,60": 19,
+      "26,60": 19,
+      "27,60": 19,
+      "28,60": 19,
+      "29,60": 19,
+      "30,60": 19,
+      "31,60": 19,
+      "32,60": 9,
+      "33,60": 19,
+      "34,60": 9,
+      "35,60": 9
+    },
+    "RowStyles": {
+      "0": 24,
+      "1": 24,
+      "2": 24,
+      "3": 24,
+      "4": 24
+    },
+    "ColStyles": {
+      "60": 9
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "4,0,32,3",
+    "4,3,32,57",
+    "1,1,2,5",
+    "1,6,2,1",
+    "1,54,2,5",
+    "1,51,2,1"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserHeight": true,
+      "Name": "BackgroundPicture1",
+      "StyleInfo": {
+        "Fill": "Background 1 0",
+        "Stroke": "black",
+        "StrokeThickness": 0.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "40,50",
+      "Size": "1134,616"
+    }
+  ]
+}//+JYf7jbcVXGpFS2F1TkzroczWDeI29p81z5ppMKfkWwcbB9Ytm1K14SBcfPgT7TpialEFCpNzz6vAUvAp7VflW80oK9nFpfetVaRC+WAwH7nnyX8/ZLPT/wrBzBTrpTOx0c/X6YY+2vkdELGxf3DG3TbqDAEyDpBqwzsOSH6Y5/8cXZLoIUNefdGDNpj8+hf1mJsCi42AeMfr2hLbBEX6wHEqx56Jr4Sk1jHwYanexKkEWqPIBVPXuKnfpCMUpr8Wnd04tP+iDW2hRzNOGHWOD1FoWV/TUn9GvJuDhW1o0djDC5HdbX90rgotPIfxOln6QfG/TVjAeS0OV6hR9Z36MTzt6HCTr/pKP8LHGusicauisXTFbTTsKIpp6JP1oc7EmVFG6ceKo0Ne37cazTlrBw9PatM66cX5tY++mWeH2qw9JLOijZ4Dd41G22Lh04wpBuinyNZKdch+RLIVSuAeK1nHjUtltzyE/v1vVLmnLWwwvlbaHzYxDc8QQUZQFqyJGxxsKZN2iN3YWuRchbpU1ly5KnfX9Ed4a96JFAr+4vuJgUjPRyQ2OuD48IreMcKKIAu7Iodbb5KprM1LvqWZ56jz3/KZZ28YXGkxISQFsT4/k1/n+JSAciymnQqtgvBZQNhwfCAla93BnOQsK8ZlOXpKZn2GuQ/LEYic0vCx/QlKPijq/o0Klwh/rS0H+b334G5v2/mA/BLAwSPyE9LZDflW3qoVQfZYCeDlWqLVq0Z4yF9JfPxJSizvuE4mPhy2dFeQ6g9iuLQLg8yP+6IVPMczLfiUXZ+H5S+sZ6ifJkto03zy0hOP1zqpWHt1r+oG+L+/QLaqocXyIgDkcrD3x/HSak8DwFpuiG+vfb/8ZrGi6ASsrwnXL/Pe/dpkEgRaAP6HKS3Ik8R4H3lw4LkRQ==|920

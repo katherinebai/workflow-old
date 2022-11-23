@@ -1,0 +1,280 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      15
+    ],
+    "Count": 16
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 30
+  },
+  "Values": {
+    "15,1": "出差ID"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "出差信息表_工作流历史视图",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "ColumnCount": 28,
+        "RowCount": 13,
+        "Name": "表格1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "出差信息表_工作流历史视图",
+            "ColumnName": "记录ID",
+            "GUID": "bd457fb8-6958-48fc-a232-47985276eb83"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=状态历史!E16"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "中等色2-无网格线"
+      }
+    },
+    "2,1": {
+      "BindingInfo": {
+        "TableName": "出差信息表_工作流历史视图",
+        "ColumnName": "操作者",
+        "GUID": "0c87b15d-bc66-4657-be40-1d4f5949cca0"
+      }
+    },
+    "2,5": {
+      "BindingInfo": {
+        "TableName": "出差信息表_工作流历史视图",
+        "ColumnName": "时间",
+        "GUID": "21005873-2495-4593-bf11-a034bd8caaf8"
+      }
+    },
+    "2,11": {
+      "BindingInfo": {
+        "TableName": "出差信息表_工作流历史视图",
+        "ColumnName": "操作名称",
+        "GUID": "21a3db0d-37d8-45a7-b8e7-400f139696f2"
+      }
+    },
+    "2,14": {
+      "BindingInfo": {
+        "TableName": "出差信息表_工作流历史视图",
+        "ColumnName": "结束状态",
+        "GUID": "bf79e27b-50aa-423f-ada0-36b7c10eef48"
+      }
+    },
+    "2,18": {
+      "BindingInfo": {
+        "TableName": "出差信息表_工作流历史视图",
+        "ColumnName": "担当者",
+        "GUID": "e619e734-c799-4935-85bf-d0e8eadd49a0"
+      }
+    },
+    "2,22": {
+      "BindingInfo": {
+        "TableName": "出差信息表_工作流历史视图",
+        "ColumnName": "备注",
+        "GUID": "a5243139-4f4c-4a4d-b24e-edbc52352950"
+      }
+    },
+    "15,4": {
+      "BindingInfo": {
+        "TableName": "出差信息表",
+        "ColumnName": "ID",
+        "GUID": "eb946528-4db5-4512-91f4-582199882a48"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "FontSize": 12.0,
+        "BorderTop": null
+      },
+      {
+        "FontSize": 12.0,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 5,
+        "HorizontalAlignment": 0,
+        "BorderLeft": null
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 1,
+        "TextIndent": 5,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 5,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontSize": 12.0,
+        "BorderRight": null
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderLeft": null
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Left",
+        "yyyy/m/d hh:mm:ss;General",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 2,
+      "1,6": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 2,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 2,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 2,
+      "1,19": 1,
+      "1,21": 1,
+      "1,22": 2,
+      "1,27": 1,
+      "1,28": 3,
+      "2,1": 4,
+      "2,5": 5,
+      "2,11": 6,
+      "2,14": 6,
+      "2,15": 6,
+      "2,18": 7,
+      "2,22": 6,
+      "2,23": 6,
+      "2,24": 6,
+      "2,25": 6,
+      "2,26": 6,
+      "2,28": 8,
+      "3,1": 9,
+      "3,28": 10,
+      "4,1": 9,
+      "4,28": 10,
+      "5,1": 9,
+      "5,28": 10,
+      "6,1": 9,
+      "6,28": 10,
+      "7,1": 9,
+      "7,28": 10,
+      "8,1": 9,
+      "8,28": 10,
+      "9,1": 9,
+      "9,28": 10,
+      "10,1": 9,
+      "10,28": 10,
+      "11,1": 9,
+      "11,28": 10,
+      "12,1": 9,
+      "12,28": 10,
+      "13,1": 11,
+      "13,2": 12,
+      "13,3": 12,
+      "13,4": 12,
+      "13,5": 12,
+      "13,6": 12,
+      "13,7": 12,
+      "13,8": 12,
+      "13,9": 12,
+      "13,10": 12,
+      "13,11": 12,
+      "13,12": 12,
+      "13,13": 12,
+      "13,14": 12,
+      "13,15": 12,
+      "13,16": 12,
+      "13,17": 12,
+      "13,18": 12,
+      "13,19": 12,
+      "13,20": 12,
+      "13,21": 12,
+      "13,22": 12,
+      "13,23": 12,
+      "13,24": 12,
+      "13,25": 12,
+      "13,26": 12,
+      "13,27": 12,
+      "13,28": 13
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,1,1,4",
+    "2,5,1,6",
+    "2,11,1,3",
+    "2,14,1,4",
+    "2,18,1,4",
+    "2,22,1,6",
+    "15,4,1,7",
+    "3,1,11,28",
+    "1,1,1,4",
+    "1,5,1,6",
+    "1,11,1,3",
+    "1,14,1,4",
+    "1,18,1,4",
+    "1,22,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//DLKW1QfoDWy6uROXGiATemKFAIUDf9GL8TQwKTp6HFkpetrseykLnkL7sEqu+pn4TKJOQC0IYjn3F631aDFMqiezILgrh6DPu0SoIXy2sJTR7B+0hCuz58REtTY/ip40KdiC5qY7NIz9fiWToJMCdPzvcw9XNQ5AxMlk6UII+s0HOPhZODToJHS5oBIK+IaUeK+OzCmHi/XPpgwdFxRcc0wLR3cxnD5jBXa//A+UiE/PhseTMqwdHB6OzTsyo3Uwog7Wn378brIXWUsvPN0qYUPL4I6zRuTOp1SWvjl1TWJX+Nem2ZeGHPoeQjmwzZr8IsHapMPB8pL2hztMVfyjvM60ycPgfNKw/Gdy8rBxUh6i+89xi5fquVly6mBk6qFeWnk4xJN35qTtliupI0F9az5uk3ntwYHM85ueg0lwjlMC72vn0oDhg5XL8DZTyb2rdGzzuIwmYx6mMTQNL7APWLtMUDv6pJ5YMzbXaxQM9KHWX5uuDu71eeejjXYyaeW8mLnYuHmCBx3hb4SsB1Ywhiou9m6TsPXzWXgFEokMRS8jvr1ybr4nauhL8ON2ZFgrGQbzGPLxWszBsW36Gtf4IokDJ8FO99V2ibADhMTX6NTZY1R2AqsPkP+rQhEVojH310f0+EoINPnDJAnyBNfjrfpx+245r+VzzlWVnSVKl1l80NyAD/6SWfAalRvb7a8QasvrUBbqLsIG7yUi5MFcCzX75wnHjt3kXOyh44J4p0DDZFp3Xqf45DSgrgdvK0hg7lNto0KsJbPDkPE/nNIcD+rU6szffLvoF+BwxnFWdNc26ZoxWXV969YPGJfu0sotP1XoMLXkkGMLaSe4ti9Sg9iOZHFamrzwpvjoiY6aUB5kR5DVdFrAYdOO9DHSr9YN8LrjUmfgkS7io9nVLtOTZA==|920

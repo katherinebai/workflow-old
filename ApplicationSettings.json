@@ -1,0 +1,37 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "JBLS7Cv!nliw"
+  },
+  "IsPageInContainerBackgroundHardCodeWhite": true,
+  "GlobalProperties": [],
+  "WebSitePort": 60046,
+  "UserServicePort": 31504,
+  "NotAllowModifyDatabaseByJsApi": false,
+  "NotAllowQueryDatabaseByJsApi": false,
+  "NotAllowSendMailByJsApi": false,
+  "StartPage": "首页",
+  "StartDateFiscalYear": 1,
+  "FocusMoveMode": 0,
+  "MaxRowCount": 5000,
+  "AuditingList": {
+    "交通工具": 0,
+    "出差地点": 0,
+    "出差类型": 0,
+    "申请表状态": 0,
+    "出差费用预算项目表": 0,
+    "费用预算子项目表": 0,
+    "用户信息视图": 0,
+    "人民币大写对应表": 0,
+    "出差信息表_工作流历史视图": 0,
+    "出差费用借支表": 0,
+    "出差行程表": 0,
+    "出差预定清单视图": 0,
+    "出差预定表": 0,
+    "出差预算表": 0,
+    "出差借款额度表": 0,
+    "出差信息表": 0,
+    "预定及票据清单明细视图": 0,
+    "票据报销清单表": 0,
+    "出差结算汇率表": 0
+  }
+}

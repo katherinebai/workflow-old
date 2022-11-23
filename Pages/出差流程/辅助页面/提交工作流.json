@@ -1,0 +1,523 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "Count": 17
+  },
+  "Cols": {
+    "Count": 17
+  },
+  "Values": {
+    "1,1": "备注",
+    "7,12": "确定",
+    "9,1": "确认？",
+    "10,1": "出差ID",
+    "11,1": "操作"
+  },
+  "AttachInfos": {
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=提交工作流!E10"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=提交工作流!E12"
+                      }
+                    ]
+                  },
+                  "value": "提交"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "确认",
+                          "FormulaText": "提交之后就不能再修改了，您确定要提交吗？",
+                          "YesButtonText": "确定",
+                          "NoButtonText": "取消",
+                          "ConfirmIcon": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=提交工作流!E10"
+                                },
+                                "Value": "1"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "db5b094c-2f57-4925-aeb3-d32d93b502c5"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "40ef7723-1f28-4e60-9ddb-610d7d026352"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=提交工作流!E12"
+                      }
+                    ]
+                  },
+                  "value": "撤回"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "确认",
+                          "FormulaText": "您确定要撤回吗？",
+                          "YesButtonText": "确定",
+                          "NoButtonText": "取消",
+                          "ConfirmIcon": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=提交工作流!E10"
+                                },
+                                "Value": "1"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "82d1f997-f127-4f72-9860-d5a67fa5e319"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2dc96fe8-f355-4386-8b0c-64fff05586ea"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=提交工作流!E12"
+                      }
+                    ]
+                  },
+                  "value": "批准"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "确认",
+                          "FormulaText": "您确定要批准该出差申请吗？",
+                          "YesButtonText": "确定",
+                          "NoButtonText": "取消",
+                          "ConfirmIcon": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=提交工作流!E10"
+                                },
+                                "Value": "1"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "dd7a62e9-1175-4023-85f1-84c8c158b849"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d43eb6e7-27da-4bad-93b8-3885dae4ab1b"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=提交工作流!E12"
+                      }
+                    ]
+                  },
+                  "value": "拒绝"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "确认",
+                          "FormulaText": "您确定要拒绝该出差申请吗？",
+                          "YesButtonText": "是",
+                          "NoButtonText": "否",
+                          "ConfirmIcon": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=提交工作流!E10"
+                                },
+                                "Value": "1"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "c312ff0b-b45f-4b91-95b5-9764017c89ee"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2a6a9b3d-bf7f-4486-847e-cd84cee1293d"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=提交工作流!E10"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "WorkflowCommand.BatchWorkflowCommand, WorkflowCommand",
+                    "ListviewName": "表格1",
+                    "ListViewRows": 0,
+                    "ActionName": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=提交工作流!E12"
+                    },
+                    "ActionComments": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=提交工作流!B3"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=提交工作流!E12&\"成功。\""
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionCurrentUserInfoParam, ServerDesignerCommon",
+                            "currentUserProperty": {
+                              "UserProperty": "角色",
+                              "PropertyType": 3
+                            }
+                          },
+                          "value": "办公室,财务部,部门经理,总经理",
+                          "compareType": 12
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "待处理申请表",
+                            "PassValues": [],
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "DeleteCachedQuery": true
+                          }
+                        ],
+                        "ID": "7b92595d-7924-462c-b495-88ef88cbbcb2"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                            "PageName": "历史申请表",
+                            "PassValues": [],
+                            "IgnoreTargetPageCachedCurrentRowInfo": false,
+                            "DeleteCachedQuery": true
+                          }
+                        ],
+                        "ID": "253f854b-7bbe-4ba1-b9e3-5dfb22ced4bb"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2f056210-8de3-4865-866a-c95316bfe7a6"
+              }
+            ]
+          }
+        ],
+        "Text": "确定",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "9,4": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "<空>",
+        "Style": 1,
+        "Items": [
+          {
+            "Value": "1",
+            "DisplayValue": "确认"
+          },
+          {
+            "Value": "0",
+            "DisplayValue": "取消"
+          }
+        ]
+      }
+    },
+    "12,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "出差信息表",
+        "RowIndex": 12,
+        "ColumnIndex": 1,
+        "ColumnCount": 15,
+        "RowCount": 5,
+        "ColumnOperation": 2,
+        "ShowGridLine": true,
+        "Name": "表格1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "出差信息表",
+            "ColumnName": "ID",
+            "GUID": "bced6a34-f9fa-4022-ae37-887fe976608d"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=提交工作流!E11"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "13,1": {
+      "BindingInfo": {
+        "TableName": "出差信息表",
+        "ColumnName": "ID",
+        "GUID": "5c8a6854-bd48-4aef-9de7-b383a2d9b40b"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Formatter": 0,
+        "VerticalAlignment": 1,
+        "WordWrap": true
+      },
+      {
+        "FontWeight": 2
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Top",
+        "Bold",
+        "DarkGray",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 0,
+      "1,15": 0,
+      "2,1": 1,
+      "7,12": 2,
+      "12,1": 3,
+      "12,2": 4,
+      "12,3": 4,
+      "12,4": 4,
+      "12,5": 4,
+      "12,6": 4,
+      "12,7": 4,
+      "12,8": 4,
+      "12,9": 4,
+      "12,10": 4,
+      "12,11": 4,
+      "12,12": 4,
+      "12,13": 4,
+      "12,14": 4,
+      "12,15": 5,
+      "13,1": 6,
+      "13,15": 7,
+      "14,1": 6,
+      "14,15": 7,
+      "15,1": 6,
+      "15,15": 7,
+      "16,1": 8,
+      "16,2": 9,
+      "16,3": 9,
+      "16,4": 9,
+      "16,5": 9,
+      "16,6": 9,
+      "16,7": 9,
+      "16,8": 9,
+      "16,9": 9,
+      "16,10": 9,
+      "16,11": 9,
+      "16,12": 9,
+      "16,13": 9,
+      "16,14": 9,
+      "16,15": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "2,1,4,15",
+    "7,12,1,4",
+    "10,4,1,8",
+    "13,1,1,3",
+    "11,4,1,8",
+    "14,1,3,15",
+    "9,4,1,8",
+    "12,1,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "提交页面",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//J117rpqyRnr4PfRgdybDklLVycBd5/JW1+KbyfsM25OKA3E8p0VVQzrzQHjWQMo6w19y4M3Bpobfc1e87VMSjFA8f8PIq543NEf061LU9oTU7XM3F8oHPbWnYzlm8hzZ6dDc3C+Xmky6qKOxK8ejDLV4fR2Qu7RmUwFUczkljSnsa8hg+g1QepccW28E4UDec5GKQltueRbVEZbNjWomAK1yvnMPzssGIKE6AqsM9OceAW1vGi0UL0f8adSX/wQuJUBzRLBoYsu4+D/8Ze+DeWcuEqjmLXThl8HYzMnwaj1mnauC+nMKaNd+rzCW5hpJz/h9bwZcRSH8tBJQ9M83+CnLMmjUzTaCATMXWJyrCvClZ8xU/Do+UuGF3NZUcQGitZQ1r03ClZOypmMSGv7lDpfYCJJeiKNc5IMmzSXw5RB5lGFUOuHS8BpKJY6/dN2/TOPcWikJ0wctR3EKyPHsMXBiZHhuF5bSrBoMtLwqtVncndqqIN2M/pnALToukddmKwjmiES5sa5Si+/LTgLmuIsvDWl3B6hxJgsmr8ucENpgi+bXTxK7hSzWYZQDqx7wvjqSJELvmX67l5rnKzZvtq81dSQ8coNFIAlmLm5KCL19U7L/tiJNauIxt/G7auwYk1A5i0mPQL5fnmvGwiJqc8r5spV1HHPBm0+0anSKsPRDnz1eryb7KFcf9kL1qdp7sjebxRutwdZvCkKkZ+uRwbNZRnZ76zsWag/8h17jM43f9DuKdb8hPA+eHoy6SW6dDTofswWN3UK62RfGP8JmwP6RS25cHRoXOFNYWKpnsrhGjxT8//6rDcl229npdlGoTDgNgXFXdiUZKMFYITq+s9T34mSi6yUeSzRsDbwhYcw8K9LWWoJjvpbCi0J4qes2Mc8WAi219T+lshRjdBQCrw==|920

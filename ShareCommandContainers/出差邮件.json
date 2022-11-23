@@ -1,0 +1,25 @@
+{
+  "Name": "出差邮件",
+  "ID": "0dcd1480-f2b8-43d8-99f9-1fdb8977e7cc",
+  "Params": [
+    {
+      "ID": "30e50b93-7913-4dee-a253-e114b9dcf840",
+      "Name": "邮件标题"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+      "From": "bussiness.trip@grapecity.com",
+      "Subject": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=邮件标题"
+      },
+      "Content": "您好，\r\n\r\n[%CurrentRow=(出差信息,创建者)%]提交了出差申请，当前状态：[%CurrentRow=(出差信息,状态)%]。\r\n\r\n[%PageNavigate=(待处理申请表,请及时前往出差管理系统中处理)%]。\r\n\r\n谢谢，\r\n出差管理系统",
+      "EnhancedRecipient": {
+        "CommonValue": "%AssignTo%"
+      },
+      "ID": "bff9c2685fa6497aaf8dcadcb5105c9f"
+    }
+  ]
+}

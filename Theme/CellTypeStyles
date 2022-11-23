@@ -1,0 +1,154 @@
+{
+  "Forguncy.CustomMenu.ForguncyMenuCellTypeStyleTemplateSupportAttribute": [
+    {
+      "Key": "导航菜单",
+      "Category": "_RS_Custom",
+      "Styles": {
+        "LEVEL0": {
+          "NormalStyle": {
+            "FontColor": "Text 1 0",
+            "Background": "Background 1 0",
+            "BorderLeftString": "2px solid Background_1_0",
+            "BorderRadiusString": "0px 0px 0px 0px"
+          },
+          "HoverStyle": {
+            "Background": "#7EF4F5F9"
+          },
+          "SelectedStyle": {
+            "Background": "#7FF4F5F9",
+            "BorderLeftString": "2px solid #FF1CA1C1"
+          }
+        },
+        "LEVEL1": {
+          "NormalStyle": {
+            "FontColor": "Text 1 0",
+            "Background": "Background 1 -5",
+            "BorderRadiusString": "0px 0px 0px 0px"
+          },
+          "HoverStyle": {
+            "FontColor": "Accent 1 0",
+            "Background": "Background 1 -5 128"
+          },
+          "SelectedStyle": {
+            "FontColor": "Accent 1 0",
+            "Background": "Background 1 -5 126"
+          }
+        },
+        "LEVEL2": {
+          "NormalStyle": {
+            "BorderRadiusString": "0px 0px 0px 0px"
+          }
+        },
+        "LEVEL3": {
+          "NormalStyle": {
+            "BorderRadiusString": "0px 0px 0px 0px"
+          }
+        }
+      }
+    },
+    {
+      "Key": "样式1",
+      "Category": "_RS_Custom",
+      "Styles": {
+        "LEVEL0": {
+          "NormalStyle": {
+            "FontColor": "Text 1 0",
+            "Background": "Background 1 -5",
+            "BorderRadiusString": "0px 0px 0px 0px"
+          },
+          "HoverStyle": {
+            "FontColor": "Accent 1 0",
+            "Background": "Background 1 -5 126"
+          },
+          "SelectedStyle": {
+            "FontColor": "Accent 1 0",
+            "Background": "Background 1 -5 127"
+          }
+        },
+        "LEVEL1": {
+          "NormalStyle": {
+            "FontColor": "Text 1 0",
+            "Background": "Background 1 -5",
+            "BorderRadiusString": "0px 0px 0px 0px"
+          },
+          "HoverStyle": {
+            "FontColor": "Accent 1 0",
+            "Background": "Background 1 -5 128"
+          },
+          "SelectedStyle": {
+            "FontColor": "Accent 1 0",
+            "Background": "Background 1 -5 126"
+          }
+        },
+        "LEVEL2": {
+          "NormalStyle": {
+            "BorderRadiusString": "0px 0px 0px 0px"
+          }
+        },
+        "LEVEL3": {
+          "NormalStyle": {
+            "BorderRadiusString": "0px 0px 0px 0px"
+          }
+        }
+      }
+    }
+  ],
+  "Forguncy.ImageCellTypeStyleTemplateSupportAttribute": [
+    {
+      "Key": "_RS_RoundCorner_Shadow_Style2",
+      "Category": "_RS_RecommendStyle",
+      "Styles": {
+        "CONTAINER": {
+          "NormalStyle": {
+            "FontColor": "#333333",
+            "Background": "#FFFFFF",
+            "BorderRadiusString": "6px 6px 6px 6px",
+            "BoxShadowString": "0px 0px 6px 0px rgba(153,153,153,0.5)"
+          },
+          "DisableStyle": {
+            "Opacity": 0.5
+          }
+        }
+      }
+    },
+    {
+      "Key": "hover",
+      "Category": "_RS_Custom",
+      "Styles": {
+        "CONTAINER": {
+          "NormalStyle": {
+            "FontColor": "#333333",
+            "Background": "#FFFFFF",
+            "BorderString": "3px solid #FFFFFF",
+            "BorderRadiusString": "0px 0px 0px 0px"
+          },
+          "HoverStyle": {
+            "Background": "#FFF4F5F9",
+            "BorderRadiusString": "2px 2px 2px 2px"
+          },
+          "DisableStyle": {
+            "Opacity": 0.5
+          }
+        }
+      }
+    }
+  ],
+  "Forguncy.HyperlinkCellTypeStyleTemplateSupportAttribute": [
+    {
+      "Key": "通知",
+      "Category": "_RS_Custom",
+      "Styles": {
+        "LINK": {
+          "NormalStyle": {
+            "FontColor": "Background 1 0",
+            "Background": "Accent 5 0",
+            "BorderRadiusString": "20px 20px 20px 20px"
+          },
+          "DisableStyle": {
+            "FontColor": "Text 1 50"
+          }
+        }
+      }
+    }
+  ]
+}

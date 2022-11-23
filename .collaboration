@@ -204,7 +204,17 @@
   },
   {
     "ModuleName": "PCPage/交通费明细",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "katherine.bai@grapecity.com",
+      "Email": "katherine.bai@grapecity.com"
+    },
+    "LockDateTime": "2022-11-23T17:22:06.1025412+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\出差流程\\各项票据报销\\交通费明细.json",
+      "UserJaveScript\\echarts.min.js"
+    ]
   },
   {
     "ModuleName": "PCPage/住宿费明细",

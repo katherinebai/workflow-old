@@ -520,7 +520,17 @@
   },
   {
     "ModuleName": "CustomLibrary",
-    "ModuleType": 12
+    "State": 1,
+    "LockedBy": {
+      "UserName": "katherine.bai@grapecity.com",
+      "Email": "katherine.bai@grapecity.com"
+    },
+    "LockDateTime": "2022-11-23T16:47:31.7040618+08:00",
+    "ModuleType": 12,
+    "ToRemoveFiles": [
+      "CustomLibraries.json",
+      "UserFile\\ga.js"
+    ]
   },
   {
     "ModuleName": "MapJsonFile",

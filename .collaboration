@@ -10,7 +10,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747017+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405017+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\字典表\\交通工具.json",
@@ -25,7 +25,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747243+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.240504+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\字典表\\出差地点.json",
@@ -40,7 +40,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747282+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405059+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\字典表\\出差类型.json",
@@ -55,7 +55,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747313+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405087+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\字典表\\申请表状态.json",
@@ -70,7 +70,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747337+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.240511+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\字典表\\出差费用预算项目表.json",
@@ -85,7 +85,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747359+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.240513+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\字典表\\费用预算子项目表.json",
@@ -100,7 +100,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747384+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405155+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\字典表\\用户信息视图.json",
@@ -115,7 +115,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747421+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405184+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\字典表\\人民币大写对应表.json",
@@ -130,7 +130,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747476+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405218+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\出差信息表_工作流历史视图.json",
@@ -145,7 +145,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747498+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405237+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\出差费用借支表.json",
@@ -160,7 +160,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747522+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405255+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\出差行程表.json",
@@ -175,7 +175,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747543+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405274+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\出差预定清单视图.json",
@@ -190,7 +190,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747573+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405292+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\出差预定表.json",
@@ -205,7 +205,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747602+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.240531+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\出差预算表.json",
@@ -220,7 +220,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747627+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2405328+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\出差借款额度表.json",
@@ -235,7 +235,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5744363+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2406586+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\出差信息表.json",
@@ -250,7 +250,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747652+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2406631+08:00",
     "ModuleType": 23,
     "ToRemoveFiles": [
       "Tables\\预定及票据清单明细视图.json",
@@ -265,7 +265,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747675+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2406678+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\票据报销清单表.json",
@@ -280,7 +280,7 @@
       "UserName": "katherine.bai@grapecity.com",
       "Email": "katherine.bai@grapecity.com"
     },
-    "LockDateTime": "2022-11-23T12:19:18.5747713+08:00",
+    "LockDateTime": "2022-11-23T13:47:43.2406698+08:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\出差结算汇率表.json",
@@ -723,5 +723,16 @@
   {
     "ModuleName": "Upload",
     "ModuleType": 26
+  },
+  {
+    "ModuleName": "Table/表1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "katherine.bai@grapecity.com",
+      "Email": "katherine.bai@grapecity.com"
+    },
+    "LockDateTime": "2022-11-23T13:47:43.2404847+08:00",
+    "ModuleType": 7,
+    "ExclusiveType": 0
   }
 ]

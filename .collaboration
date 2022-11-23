@@ -218,7 +218,16 @@
   },
   {
     "ModuleName": "PCPage/住宿费明细",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "katherine.bai@grapecity.com",
+      "Email": "katherine.bai@grapecity.com"
+    },
+    "LockDateTime": "2022-11-23T17:25:59.6146894+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\出差流程\\各项票据报销\\住宿费明细.json"
+    ]
   },
   {
     "ModuleName": "PCPage/其他费用明细",

@@ -271,7 +271,16 @@
   },
   {
     "ModuleName": "PCPage/填写计划申请表（出差人）",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "katherine.bai@grapecity.com",
+      "Email": "katherine.bai@grapecity.com"
+    },
+    "LockDateTime": "2022-12-01T17:53:11.8460311+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\出差流程\\填写计划申请表（出差人）.json"
+    ]
   },
   {
     "ModuleName": "PCPage/完成",
